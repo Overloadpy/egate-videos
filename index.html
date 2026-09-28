@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EGATE Burayu Campus - Video Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .video-card:hover .play-overlay { opacity: 1; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            Fastly CDN Streaming
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            Soundless B-Roll
+          </span>
+        </div>
+        <h1 class="text-2xl font-bold tracking-tight text-white mt-1">EGATE Burayu Campus Video Gallery</h1>
+        <p class="text-sm text-slate-400">29 Soundless HD & 4K video assets ready for website embedding</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/Overloadpy/egate-videos/releases/tag/v1.0.0" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium rounded-lg border border-slate-700 transition">
+          View GitHub Release ↗
+        </a>
+      </div>
+    </div>
+    <!-- Category Filter Tabs -->
+    <div class="max-w-7xl mx-auto px-6 overflow-x-auto py-2 flex items-center gap-2 border-t border-slate-800/60 scrollbar-none">
+      <button onclick="filterCategory('all')" id="btn-all" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium bg-emerald-600 text-white whitespace-nowrap">
+        All Categories (29)
+      </button>
+      <button onclick="filterCategory('Campus Environment and Buildings')" id="btn-campus-environment-and-buildings" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Campus Environment and Buildings (8)
+      </button>
+      <button onclick="filterCategory('Classroom and Trainee Podcast Interview')" id="btn-classroom-and-trainee-podcast-interview" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Classroom and Trainee Podcast Interview (3)
+      </button>
+      <button onclick="filterCategory('Computer Lab and Robotics Class')" id="btn-computer-lab-and-robotics-class" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Computer Lab and Robotics Class (3)
+      </button>
+      <button onclick="filterCategory('Industrial Circuit Board and PCB Lab')" id="btn-industrial-circuit-board-and-pcb-lab" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Industrial Circuit Board and PCB Lab (3)
+      </button>
+      <button onclick="filterCategory('Innovation Class and Electronics Lab')" id="btn-innovation-class-and-electronics-lab" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Innovation Class and Electronics Lab (3)
+      </button>
+      <button onclick="filterCategory('Library and Learning Commons')" id="btn-library-and-learning-commons" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Library and Learning Commons (6)
+      </button>
+      <button onclick="filterCategory('Student Projects and Robotics')" id="btn-student-projects-and-robotics" class="cat-btn px-3 py-1.5 rounded-md text-xs font-medium text-slate-400 hover:text-white hover:bg-slate-800 whitespace-nowrap transition">
+        Student Projects and Robotics (3)
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="video-grid">
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_aerial_overview_01.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#01</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Burayu Campus Aerial Overview & Courtyard 1
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Overview of the EGATE Burayu campus facilities, courtyard pathways, and student residences.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_aerial_overview_01.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_aerial_overview_01.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_aerial_overview_02.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#02</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Burayu Campus Aerial Overview & Grounds 2
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Overview of the EGATE campus grounds and surrounding landscape.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_aerial_overview_02.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_aerial_overview_02.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_courtyard_rotunda_walkthrough.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#03</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Campus Courtyard & Glass Rotunda Walkthrough
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The central courtyard and circular glass rotunda at Burayu campus.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_courtyard_rotunda_walkthrough.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_courtyard_rotunda_walkthrough.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_pathway_walkthrough.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#04</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Campus Pathway & Exterior Colonnade Walkthrough
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Paved colonnade and covered walkways connecting campus buildings.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_pathway_walkthrough.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_pathway_walkthrough.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_main_entrance_pillars_01.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#05</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Campus Main Entrance Portico & Pillars 1
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The main entrance portico featuring fluted concrete pillars.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_main_entrance_pillars_01.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_main_entrance_pillars_01.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_main_entrance_pillars_02.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#06</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Campus Main Entrance Portico & Driveway 2
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The main entrance portico, structural pillars, and paved driveway.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_main_entrance_pillars_02.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_main_entrance_pillars_02.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_exterior_dusk_plaza_survey_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#07</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Campus Exterior Plaza & Illuminated Facade (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of the campus exterior plaza, stone retaining masonry, and illuminated facade.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_exterior_dusk_plaza_survey_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_exterior_dusk_plaza_survey_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Campus Environment and Buildings">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_exterior_twilight_building_view_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Campus Environment and Buildings</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#08</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Exterior Twilight Academic Complex (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K twilight view of the primary academic structure.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">burayu_campus_exterior_twilight_building_view_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/burayu_campus_exterior_twilight_building_view_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/library_exterior_approach_dusk_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#09</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Library Exterior Approach & Pedestrian Ramp (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of the landscaped pedestrian ramp and stairs leading to the EGATE Library.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">library_exterior_approach_dusk_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/library_exterior_approach_dusk_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_atrium_tree_overview.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#10</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Inside Central Library: Indoor Tree & Radial Atrium
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The circular library atrium featuring a living indoor tree and radial study carrels.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">inside_library_atrium_tree_overview.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_atrium_tree_overview.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_mezzanine_balcony.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#11</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Inside Central Library: Mezzanine Study Balconies
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Upper curved mezzanine galleries with individual study carrels and glass balustrades.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">inside_library_mezzanine_balcony.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_mezzanine_balcony.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_skylight_ceiling.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#12</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Inside Central Library: Natural Skylight Dome
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The radial skylight dome illuminating the central library atrium.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">inside_library_skylight_ceiling.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/inside_library_skylight_ceiling.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/atrium_corridor_class_view_walkthrough.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#13</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Atrium Corridor & Classroom Perimeter Walkthrough
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Curved upper gallery corridor overlooking the central atrium and classroom entrances.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">atrium_corridor_class_view_walkthrough.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/atrium_corridor_class_view_walkthrough.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Library and Learning Commons">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/class_view_photo_corridor_walkthrough_duplicate.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Library and Learning Commons</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#14</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Atrium Corridor Walkthrough (Archival Copy)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Archival copy of the atrium corridor walkthrough.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">class_view_photo_corridor_walkthrough_duplicate.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/class_view_photo_corridor_walkthrough_duplicate.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Industrial Circuit Board and PCB Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/pcb_cnc_isolation_milling_machine.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Industrial Circuit Board and PCB Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#15</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              PCB CNC Isolation Milling & Routing Machine
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Automated precision CNC milling and PCB isolation routing machine.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">pcb_cnc_isolation_milling_machine.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/pcb_cnc_isolation_milling_machine.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Industrial Circuit Board and PCB Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/bungard_industrial_pcb_chemical_plating_line.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Industrial Circuit Board and PCB Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#16</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Bungard Industrial PCB Chemical Plating Line
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              German Bungard industrial through-hole plating, etching, and spray-rinsing line.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">bungard_industrial_pcb_chemical_plating_line.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/bungard_industrial_pcb_chemical_plating_line.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Industrial Circuit Board and PCB Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/bungard_pcb_production_line_close_up.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Industrial Circuit Board and PCB Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#17</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Bungard PCB Production Equipment Details
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Chemical baths, immersion racks, and control systems of the Bungard PCB line.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">bungard_pcb_production_line_close_up.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/bungard_pcb_production_line_close_up.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Computer Lab and Robotics Class">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/trainee_coding_and_software_innovation.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Computer Lab and Robotics Class</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#18</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Trainee Software Development & Coding Session
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Gifted students engaged in programming, algorithmic design, and software development.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">trainee_coding_and_software_innovation.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/trainee_coding_and_software_innovation.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Computer Lab and Robotics Class">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/robotics_and_computer_lab_workstations.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Computer Lab and Robotics Class</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#19</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Robotics & Computer Lab Workstations
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              The robotics and computer laboratory with PC workstations and 3D printers.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">robotics_and_computer_lab_workstations.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/robotics_and_computer_lab_workstations.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Computer Lab and Robotics Class">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/robotics_and_electronics_lab_entrance_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Computer Lab and Robotics Class</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#20</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Robotics & Electronics Lab Entrance (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K entrance to the Electronics and Computer Lab.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">robotics_and_electronics_lab_entrance_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/robotics_and_electronics_lab_entrance_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Innovation Class and Electronics Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/think_big_astronaut_mural_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Innovation Class and Electronics Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#21</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Innovation Class: 'Think Big' Space Mural (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of the 'Think Big' space exploration mural in the electronics innovation classroom.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">think_big_astronaut_mural_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/think_big_astronaut_mural_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Innovation Class and Electronics Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/innovation_class_electronics_benches_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Innovation Class and Electronics Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#22</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Innovation Class: Electronics Testing Benches (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of laboratory benches equipped with oscilloscopes, power supplies, and signal generators.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">innovation_class_electronics_benches_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/innovation_class_electronics_benches_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Innovation Class and Electronics Lab">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/electronics_testing_instruments_view_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Innovation Class and Electronics Lab</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#23</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Electronics Laboratory Testing Instrumentation (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of active digital displays and controls on electronics testing instruments.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">electronics_testing_instruments_view_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/electronics_testing_instruments_view_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Student Projects and Robotics">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_tracked_rover_and_telescope.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Student Projects and Robotics</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#24</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Student Project: Tracked Rover Robot & Astronomical Telescope
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Student-built tracked rover chassis with breadboard electronics, alongside an astronomical telescope.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">student_project_tracked_rover_and_telescope.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_tracked_rover_and_telescope.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Student Projects and Robotics">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_smart_home_iot_prototype_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Student Projects and Robotics</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#25</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Student Project: Smart Home Automation Prototype (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of a student-built smart home architectural model connected to a K&H IDL-800A trainer.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">student_project_smart_home_iot_prototype_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_smart_home_iot_prototype_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Student Projects and Robotics">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_ealsrs1_quadruped_and_drone_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Student Projects and Robotics</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#26</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Student Project: EALSRS-1 Quadruped Robot & Drone (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of student robotic prototypes: EALSRS-1 quadruped walking robot, drone airframe, and vehicle chassis.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">student_project_ealsrs1_quadruped_and_drone_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/student_project_ealsrs1_quadruped_and_drone_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Classroom and Trainee Podcast Interview">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/tiered_classroom_auditorium_front_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Classroom and Trainee Podcast Interview</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#27</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Tiered Lecture Auditorium: Podium & Presentation Area (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of the lecture podium, whiteboards, and projection screen in the tiered auditorium.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">tiered_classroom_auditorium_front_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/tiered_classroom_auditorium_front_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Classroom and Trainee Podcast Interview">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/tiered_classroom_auditorium_rear_4k.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Classroom and Trainee Podcast Interview</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#28</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Tiered Lecture Auditorium: Student Seating (4K)
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              4K view of curved tiered student seating banks and acoustic ceiling.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">tiered_classroom_auditorium_rear_4k.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/tiered_classroom_auditorium_rear_4k.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="video-item bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-lg flex flex-col group" data-category="Classroom and Trainee Podcast Interview">
+        <!-- Video Player -->
+        <div class="relative aspect-video bg-black">
+          <video 
+            src="https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/trainee_activity_podcast_interview.mp4" 
+            controls 
+            muted 
+            loop 
+            playsinline 
+            preload="metadata"
+            class="w-full h-full object-cover">
+          </video>
+        </div>
+        <!-- Card Body -->
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="font-medium text-emerald-400">Classroom and Trainee Podcast Interview</span>
+              <span class="bg-slate-800 px-2 py-0.5 rounded text-[11px] font-mono">#29</span>
+            </div>
+            <h3 class="font-semibold text-white text-base leading-snug group-hover:text-emerald-400 transition">
+              Trainee Activity & Educational Program Overview
+            </h3>
+            <p class="text-xs text-slate-400 mt-2 line-clamp-3 leading-relaxed">
+              Informational overview detailing EGATE student activities, talent development programs, and campus life.
+            </p>
+          </div>
+          <!-- Embed Code Popover / Copy -->
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <span class="text-[11px] text-slate-500 font-mono truncate max-w-[170px]">trainee_activity_podcast_interview.mp4</span>
+            <button onclick="copyEmbed('https://github.com/Overloadpy/egate-videos/releases/download/v1.0.0/trainee_activity_podcast_interview.mp4')" class="px-2.5 py-1 text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 rounded border border-slate-700 transition flex items-center gap-1.5">
+              <span>📋 Copy Embed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-emerald-600 text-white px-4 py-2.5 rounded-lg shadow-xl text-sm font-medium transition-all transform translate-y-20 opacity-0 pointer-events-none flex items-center gap-2">
+    <span>✓</span> HTML5 Embed code copied to clipboard!
+  </div>
+
+  <script>
+    function filterCategory(cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => {
+        b.classList.remove('bg-emerald-600', 'text-white');
+        b.classList.add('text-slate-400');
+      });
+      const btn = event.target;
+      btn.classList.add('bg-emerald-600', 'text-white');
+      btn.classList.remove('text-slate-400');
+
+      const items = document.querySelectorAll('.video-item');
+      items.forEach(el => {
+        if (cat === 'all' || el.getAttribute('data-category') === cat) {
+          el.style.display = 'flex';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    function copyEmbed(url) {
+      const code = `<video src="${url}" controls autoplay muted loop playsinline preload="metadata" style="width: 100%; border-radius: 8px;"></video>`;
+      navigator.clipboard.writeText(code).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        setTimeout(() => {
+          toast.classList.add('translate-y-20', 'opacity-0');
+        }, 2200);
+      });
+    }
+  </script>
+</body>
+</html>
